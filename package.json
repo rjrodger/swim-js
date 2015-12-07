@@ -6,7 +6,8 @@
   "scripts": {
     "cover": "covert test/index -q",
     "lint": "jshint . --exclude-path=./.gitignore && jscs .",
-    "test": "npm run lint && node test/index | tap-spec"
+    "test": "npm run lint && node test/index | tap-spec",
+    "test-only": "node test/index | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -37,8 +38,9 @@
     "clone": "^0.2.0",
     "commander": "^2.6.0",
     "debug": "^2.1.1",
+    "farmhash": "https://github.com/lovell/farmhash",
+    "lodash": "^3.10.1",
     "metrics": "^0.1.9",
-    "msgpack": "^1.0.2",
-    "farmhash": "https://github.com/lovell/farmhash"
+    "msgpack": "^1.0.2"
   }
 }
