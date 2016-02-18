@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cover": "covert test/index -q",
-    "lint": "jshint . --exclude-path=./.gitignore && jscs .",
+    "lint": "jshint . --exclude-path=./.gitignore && jscs ./lib",
     "test": "npm run lint && node test/index | tap-spec",
     "test-only": "node test/index | tap-spec"
   },
